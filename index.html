@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capture the Table</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="CaptureTheTable_Logo.png" type="image/x-icon">
+</head>
+
+<body id="body">
+    <button id="skjermknapp">
+    </button>
+        <div id="oppstartsDelen">
+    <h1>Velkommen til Capture the Table spilltimer</h1>
+    
+    
+    
+    <div id="form">
+        
+        
+        <label for="tid" id="tidLabel">Velg spillertid: 1:00</label>
+        <input name="tid" id="tid" type="range" min="30" max="180" value="60" onchange="changeTime(this); spillerTid = Number(this.value);">
+
+        <label for="tilleggsTid" id="tilleggsLabel">Velg tilleggstid (s):</label>
+        <input type="number" min="0" max="30" value="5" id="tilleggsTid" onchange="tilleggsTid = Number(this.value);">
+        
+        <label for="superPowers">Velg SuperPowers: </label>
+        <input value="1" type="checkbox" id="superPowers" name="superPowers" onchange="superSwitched++; superpowers = (superSwitched % 2 == 1); console.log(superpowers);" >
+    </div>
+    
+    <div id="start" onclick="tilTimer()">Start spillet!</div>
+    
+    
+</div>
+
+
+<div id="timerDelen">
+    
+    <div id="timers">
+        <div id="timer1" class="timers"><p>01:14</p></div>
+        <div id="timer2" class="timers"><p>3:16</p></div>
+        <div id="timer3" class="timers"><p>2:11</p></div>
+        <div id="timer4" class="timers"><p>1:05</p></div>
+    </div>
+    
+    <div id="timer">0:14</div>
+    
+    
+    <div id="superPower">
+        <p id="superPowerText" >Dobbel runde</p>
+        <img id="superImage" src="CaptureTheTable_Logo.png" style="display: none;">
+    </div>
+    
+    
+    
+</div>
+</body>
+<script src="script.js"></script>
+</html>

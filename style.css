@@ -1,0 +1,98 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+}
+
+.timers{
+    display: inline-block;
+    font-size: 25px;
+    padding: 3px;
+    margin: 0px;
+}
+
+
+#timers{
+    position: fixed;
+    top: 0px;
+    left: 35%;
+    
+}
+
+#timer{
+    position: fixed;
+    top: 30%;
+        left: 30%;
+    font-size: 150px
+}
+
+#superPowerText{
+    display: inline;
+    margin: 10px;
+    font-size: 30px;
+}
+
+#superPower{
+    position: fixed;
+    display: inline-block;
+    bottom: 25px;
+    right: 40%;
+}
+#superPower img{
+    height: 34px;
+}
+
+#timer1{
+    background-color: #EF476F;
+}
+
+#timer2{
+    background-color: #06D6A0;
+}
+
+#timer3{
+    background-color: #118AB2;
+}
+
+#timer4{
+    background-color: #778AD9;
+}
+
+
+#form input{
+    display: block;
+}
+
+
+#start{
+    width: 100%;
+    position:fixed;
+    bottom: 0px;
+    text-align: center;
+    background-color: greenyellow;
+    height: 50px;
+    font-size: 40px;
+    margin: 0px;
+    text-decoration: none;
+    
+}
+a{
+    text-decoration: none;
+}
+
+
+#oppstartsDelen{
+    display: block;
+}
+
+#timerDelen{
+    display: none;
+}
+
+#skjermknapp{
+    position: fixed;
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    z-index: 100;
+}
